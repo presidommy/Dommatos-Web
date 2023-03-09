@@ -26,9 +26,9 @@ export class AppComponent {
     });
     if (document.location.protocol === 'https:') {
 
-      xhr.open('GET', 'https://speed.hetzner.de/100MB.bin');
+      xhr.open('GET', 'https://www.dommatos.com/test/100mb.test');
     }else{
-      xhr.open('GET', 'http://speedtest-nyc1.digitalocean.com/100mb.test');
+      xhr.open('GET', 'http://localhost:4200/test/100mb.test');
     } //http://speedtest-nyc1.digitalocean.com/100mb.test  Cambia la URL a un archivo de prueba que sea adecuado para tus necesidades
     xhr.send();
     return false;
