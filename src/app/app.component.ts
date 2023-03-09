@@ -20,11 +20,16 @@ export class AppComponent {
     xhr.addEventListener('progress', event => {
       const endTime = performance.now();
       const duration = (endTime - startTime) / 1000;
-      const downloadSpeed = event.loaded / (event.timeStamp / 1000) / 40240 ; // Descarga en Mbps
+      const downloadSpeed = event.loaded / (event.timeStamp / 1000) / 40240; // Descarga en Mbps
       this.downloadSpeed = downloadSpeed.toFixed(2) + ' Mbps';
 
     });
-    xhr.open('GET', 'http://speedtest-nyc1.digitalocean.com/100mb.test'); // Cambia la URL a un archivo de prueba que sea adecuado para tus necesidades
+    if (document.location.protocol === 'https:') {
+
+      xhr.open('GET', 'https://speed.hetzner.de/100MB.bin');
+    }else{
+      xhr.open('GET', 'http://speedtest-nyc1.digitalocean.com/100mb.test');
+    } //http://speedtest-nyc1.digitalocean.com/100mb.test  Cambia la URL a un archivo de prueba que sea adecuado para tus necesidades
     xhr.send();
     return false;
   }
