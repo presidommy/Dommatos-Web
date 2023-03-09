@@ -38,11 +38,11 @@
               filter: none !important;
           }
       </style>
+
   </noscript>
   <style></style>
+
 </head>
-
-
 
 <body class="is-playing">
   <div id="wrapper">
@@ -59,7 +59,7 @@
                               </div>
                               <div>
                                   <ul id="buttons02" class="buttons">
-                                      <li><a href="" class="button n01">Inicia Sesión Dommatos</a></li>
+                                      <li><a href="" class="button n01">Iniciar</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -163,8 +163,8 @@
                           <div class="inner">
                               <div class="before-spacer">
                                   <hr id="divider03" class="style1">
-                                  <h2 id="text85" class="style3">En Diseño</h2>
-                                  <p id="text86" class="style2">Procesando información</p>
+                                  <h2 id="text85" class="style3">Nuestros Partners</h2>
+                                  <p id="text86" class="style2">Nuestros aliados estrategicos, los cuales invitamos a conocer</p>
                               </div><span></span>
                           </div>
                       </div>
@@ -172,22 +172,23 @@
                   <div id="container14" class="container columns full screen">
                       <div class="wrapper">
                           <div class="inner">
-                              <div>
+                              <div style="text-align: center;">
                                   <div id="image18" class="style2 image"><span class="frame"><img
-                                              src="./assets/Pagina-en-mantenimiento-2.png" alt=""></span></div>
-                                  <h3 id="text60" class="style5">En Mantenimiento</h3>
-                                  <p id="text84" class="style2">Processando información...</p>
+                                              src="./assets/Deliagro.PNG" alt="DeliAgro"></span></div>
+                                              <br/><br><br>
+                                  <h3 id="text60" class="style5">DeliAgro</h3>
+                                  <p id="text84" class="style2">StartUp Dedicada a impulsar el E-Commerce de Nuestros Campesinos</p>
                                   <ul id="links02" class="style1 links">
-                                      <li class="n01"><a href="">Live demo</a></li>
+                                      <li class="n01"><a href="">DeliAgro</a></li>
                                   </ul>
                               </div>
-                              <div>
+                              <div style="text-align: center;">
                                   <div id="image02" class="style2 image"><span class="frame"><img
-                                              src="./assets/Pagina-en-mantenimiento-2.png" alt=""></span></div>
-                                  <h3 id="text04" class="style5">En Mantenimiento</h3>
-                                  <p id="text22" class="style2">Procesando....</p>
+                                              src="./assets/casaDeGatos.png" alt="Casa De Gatos"></span></div>
+                                  <h3 id="text04" class="style5">Casa De Gatos</h3>
+                                  <p id="text22" class="style2">StartUp Dedeicada al cuidado y alojamiento de tus Felinos cuando lo necesites</p>
                                   <ul id="links01" class="style1 links">
-                                      <li class="n01"><a href="">Demostración En Mantenimiento</a></li>
+                                      <li class="n01"><a href="https://www.casadegatos.com.co/">Casa De Gatos</a></li>
                                   </ul>
                               </div>
                           </div>
@@ -198,8 +199,8 @@
                           <div class="inner">
                               <div class="before-spacer">
                                   <hr id="divider05" class="style1">
-                                  <h2 id="text40" class="style3">Mantenimiento</h2>
-                                  <p id="text41" class="style2">En mantenimiento.</p>
+                                  <h2 id="text40" class="style3">Test de Velocidad</h2>
+                                  <p id="text41" class="style2">Prueba la velocidad de tu internet</p>
                               </div><span></span>
                           </div>
                       </div>
@@ -207,24 +208,25 @@
                   <div id="container01" class="container columns full screen">
                       <div class="wrapper">
                           <div class="inner">
-                              <div>
+                              <div style="text-align: center;">
+                                <h3 id="text31" class="style5">Test de Descarga</h3>
+                                <a href="#" (click)="downloadSpeedTest()">
                                   <div id="image04" class="style1 image"><span class="frame"><img
-                                              src="./assets/image04.svg" alt=""></span></div>
-                                  <h3 id="text16" class="style5">Buena Cómunicación</h3>
-                                  <p id="text23" class="style2">Precesando....</p>
-                              </div>
-                              <div>
-                                  <div id="image10" class="style1 image"><span class="frame"><img
                                               src="./assets/image10.svg" alt=""></span></div>
-                                  <h3 id="text31" class="style5">Tiempos de entrega</h3>
-                                  <p id="text32" class="style2">Procesando....</p>
+                                            </a>
+                                  <h3 id="text16" class="style5">{{ downloadSpeed }}</h3>
+                                  <p id="resultados-carga" class="style2"></p>
                               </div>
-                              <div>
-                                  <div id="image06" class="style1 image"><span class="frame"><img
-                                              src="./assets/image06.svg" alt=""></span></div>
-                                  <h3 id="text33" class="style5">Diseños</h3>
-                                  <p id="text36" class="style2">Procesando....</p>
+                              <div style="text-align: center;">
+                                <h3 id="text31" class="style5">Test de Carga</h3>
+                                <a onclick="testDeVelocidad()">
+                                <div id="image10" class="style1 image"><span class="frame"><img
+                                              src="./assets/image10.svg" alt=""></span></div>
+                                            </a>
+                                  <h3 id="text31" class="style5">{{ downloadSpeed }}</h3>
+                                  <p id="resultados-descarga" class="style2"></p>
                               </div>
+
                           </div>
                       </div>
                   </div>
